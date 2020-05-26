@@ -1,6 +1,5 @@
-
-{% set version = "1.0.8" %}
-{% set sha256 = "9b58ed2da382ade58534a29cba73beca25046e8beef5b580e3615438180d0bb3" %}
+{% set version = "1.0.9" %}
+{% set sha256 = "63afc99fb0841a2c295e51171c150b55a007455f18662d8f21b1d0290796a316" %}
 
 {% set build = 0 %}
 
@@ -14,7 +13,7 @@ source:
 
 build:
   number: {{ build }}
-  skip: True  # [win]
+  skip: true  # [win]
   run_exports:
     - libaatm
 
@@ -38,7 +37,7 @@ about:
   license: GPL-2.1
   license_family: GPL
   license_file: LICENSE
-  summary: 'Library of Alma Atmospheric Transmission at Microwaves Tools'
+  summary: Library of Alma Atmospheric Transmission at Microwaves Tools
   description: |
     This is a repackaged version of the ATM tools found at this upstream
     location:  https://bitbucket.sco.alma.cl/projects/ASW/repos/telcal/browse/TelCalResults/Libraries/ATM.
