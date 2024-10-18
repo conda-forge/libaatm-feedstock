@@ -1,7 +1,7 @@
 {% set version = "1.0.9" %}
 {% set sha256 = "63afc99fb0841a2c295e51171c150b55a007455f18662d8f21b1d0290796a316" %}
 
-{% set build = 1 %}
+{% set build = 2 %}
 
 package:
   name: libaatm
@@ -21,6 +21,7 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - {{ stdlib('c') }}
     - cmake
     - make
   host:
@@ -35,7 +36,7 @@ test:
 
 about:
   home: https://github.com/hpc4cmb/libaatm
-  license: GPL-2.1
+  license: GPL-2.0-or-later
   license_family: GPL
   license_file: LICENSE
   summary: Library of Alma Atmospheric Transmission at Microwaves Tools

@@ -28,5 +28,8 @@ cmake \
 make -j $CPU_COUNT
 make install
 
-# Run tests
-make test
+# Run tests.  Skip tests on Apple arm64 cross compiles, since
+# the data files loaded in the tests are not portable.
+if [ "x${CONDA_BUILD_CROSS_COMPILATION}" != "x1" ]; then
+    make test
+fi
