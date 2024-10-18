@@ -28,8 +28,8 @@ cmake \
 make -j $CPU_COUNT
 make install
 
-# Run tests.  Skip Apple arm64, since there seems to be a
-# problem loading the data files used in the test
-if [[ $(uname -m) != 'arm64' ]]; then
+# Run tests.  Skip tests on Apple arm64 cross compiles, since
+# the data files loaded in the tests are not portable.
+if [ "x${build_platform}" != "osx_arm64" ]; then
     make test
 fi
