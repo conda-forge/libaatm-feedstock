@@ -1,7 +1,7 @@
-{% set version = "1.0.9" %}
-{% set sha256 = "63afc99fb0841a2c295e51171c150b55a007455f18662d8f21b1d0290796a316" %}
+{% set version = "1.1.0" %}
+{% set sha256 = "83d70f1d3e87c72015f3c4f6a79a5e4d37f18eccc43984954c7f5e0e61f18a4f" %}
 
-{% set build = 2 %}
+{% set build = 0 %}
 
 package:
   name: libaatm
