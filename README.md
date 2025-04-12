@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libaatm-feedsto
 
 Home: https://github.com/hpc4cmb/libaatm
 
-Package license: GPL-2.1
+Package license: GPL-2.0-or-later
 
 Summary: Library of Alma Atmospheric Transmission at Microwaves Tools
 
